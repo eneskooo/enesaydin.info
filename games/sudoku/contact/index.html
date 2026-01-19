@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sudoku Pal | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1f2733;
+        --muted: #5a6672;
+        --accent: #d36b3d;
+        --surface: #fffdf9;
+        --stroke: rgba(31, 39, 51, 0.12);
+        --shadow: 0 28px 80px rgba(20, 35, 50, 0.18);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Manrope", "Segoe UI", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(
+            circle at 18% 12%,
+            #fde6cf 0%,
+            #f3f0e9 34%,
+            #e7f1f5 100%
+          ),
+          linear-gradient(120deg, #fdf7f0, #edf2f8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 48px 18px 60px;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      body::before,
+      body::after {
+        content: "";
+        position: absolute;
+        width: 520px;
+        height: 520px;
+        border-radius: 50%;
+        filter: blur(60px);
+        opacity: 0.5;
+        z-index: 0;
+      }
+
+      body::before {
+        top: -220px;
+        right: -160px;
+        background: radial-gradient(
+          circle,
+          rgba(211, 107, 61, 0.38),
+          transparent 70%
+        );
+      }
+
+      body::after {
+        bottom: -180px;
+        left: -120px;
+        background: radial-gradient(
+          circle,
+          rgba(68, 132, 163, 0.32),
+          transparent 70%
+        );
+      }
+
+      .page {
+        position: relative;
+        z-index: 1;
+        width: min(980px, 100%);
+        background: var(--surface);
+        border: 1px solid var(--stroke);
+        border-radius: 28px;
+        padding: 38px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .page::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          145deg,
+          rgba(211, 107, 61, 0.06),
+          rgba(68, 132, 163, 0.05)
+        );
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      .hero {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        gap: 8px;
+        margin-bottom: 20px;
+      }
+
+      .eyebrow {
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        font-size: 0.78rem;
+        color: var(--muted);
+        margin: 0;
+      }
+
+      h1 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: clamp(2rem, 4vw, 2.6rem);
+        margin: 0;
+      }
+
+      .lede {
+        color: var(--muted);
+        margin: 6px 0 0;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .content {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        gap: 18px;
+      }
+
+      section {
+        padding: 18px 16px 14px;
+        border-bottom: 1px solid rgba(31, 39, 51, 0.08);
+      }
+
+      section:last-of-type {
+        border-bottom: none;
+        padding-bottom: 2px;
+      }
+
+      h2 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: 1.25rem;
+        margin: 0 0 10px;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.75;
+      }
+
+      a {
+        color: var(--ink);
+        font-weight: 600;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(31, 39, 51, 0.16);
+        transition:
+          border-color 0.2s ease,
+          color 0.2s ease;
+      }
+
+      a:hover {
+        color: var(--accent);
+        border-color: var(--accent);
+      }
+
+      .actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 8px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 18px;
+        border-radius: 12px;
+        border: 1px solid rgba(31, 39, 51, 0.12);
+        background: linear-gradient(120deg, #ffefe5, #ffe4d4);
+        color: var(--ink);
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        box-shadow: 0 12px 30px rgba(20, 35, 50, 0.14);
+      }
+
+      @media (max-width: 720px) {
+        body {
+          padding: 28px 16px 40px;
+        }
+
+        .page {
+          padding: 26px 22px;
+          border-radius: 22px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        section {
+          padding: 14px 6px 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <p class="eyebrow">Sudoku Pal</p>
+        <h1>Contact</h1>
+        <p class="lede">
+          Sudoku Pal ve diğer oyunlarımızla ilgili konularda bize e-posta ile
+          ulaşın.
+        </p>
+      </header>
+
+      <main class="content" aria-label="Sudoku Pal Contact">
+        <section>
+          <h2>Game Support & Feedback</h2>
+          <p>
+            If you're experiencing issues with any of our games, have
+            suggestions for improvements, or want to share your feedback, please
+            don't hesitate to reach out. Your input helps us create better
+            gaming experiences.
+          </p>
+        </section>
+
+        <section>
+          <h2>Business Inquiries</h2>
+          <p>
+            Interested in collaboration, game development services, or have a
+            project in mind? We're always open to discussing new opportunities
+            and partnerships in the gaming industry.
+          </p>
+        </section>
+
+        <section>
+          <h2>Press & Media</h2>
+          <p>
+            For press inquiries, interview requests, or media kit information,
+            please contact us and we'll get back to you as soon as possible.
+          </p>
+        </section>
+
+        <section>
+          <h2>Ready to connect?</h2>
+          <p>Click the button below to send us an email.</p>
+          <div class="actions">
+            <a
+              class="button"
+              href="mailto:enesaydin9494@gmail.com?subject=Sudoku%20Pal%20%7C%20Contact"
+              >Send Email</a
+            >
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
