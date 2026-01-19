@@ -196,6 +196,35 @@
         box-shadow: 0 12px 30px rgba(20, 35, 50, 0.14);
       }
 
+      .footer {
+        margin-top: 80px;
+        border-top: 1px solid rgba(30, 28, 26, 0.1);
+        padding-top: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+        color: var(--ink-soft);
+        font-size: 0.95rem;
+      }
+
+      .footer-links {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .footer a {
+        color: var(--ink-soft);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .footer a:hover {
+        color: var(--ink);
+        text-decoration: underline;
+      }
+
       @media (max-width: 720px) {
         body {
           padding: 28px 16px 40px;
@@ -266,6 +295,15 @@
             >
           </div>
         </section>
+        <footer class="footer">
+          <div>Sudoku Pal • Mobile Sudoku experience</div>
+          <div>Focus, calm, solve</div>
+          <div class="footer-links">
+            <a href="/games/sudoku/privacy">Privacy</a>
+            <span aria-hidden="true">•</span>
+            <a href="/games/sudoku/contact">Contact</a>
+          </div>
+        </footer>
       </main>
     </div>
   </body>
