@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sudoku Pal | Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1f2733;
+        --muted: #5a6672;
+        --accent: #d36b3d;
+        --surface: #fffdf9;
+        --stroke: rgba(31, 39, 51, 0.12);
+        --shadow: 0 28px 80px rgba(20, 35, 50, 0.18);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Manrope", "Segoe UI", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(
+            circle at 18% 12%,
+            #fde6cf 0%,
+            #f3f0e9 34%,
+            #e7f1f5 100%
+          ),
+          linear-gradient(120deg, #fdf7f0, #edf2f8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 48px 18px 60px;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      body::before,
+      body::after {
+        content: "";
+        position: absolute;
+        width: 520px;
+        height: 520px;
+        border-radius: 50%;
+        filter: blur(60px);
+        opacity: 0.5;
+        z-index: 0;
+      }
+
+      body::before {
+        top: -220px;
+        right: -160px;
+        background: radial-gradient(
+          circle,
+          rgba(211, 107, 61, 0.38),
+          transparent 70%
+        );
+      }
+
+      body::after {
+        bottom: -180px;
+        left: -120px;
+        background: radial-gradient(
+          circle,
+          rgba(68, 132, 163, 0.32),
+          transparent 70%
+        );
+      }
+
+      .page {
+        position: relative;
+        z-index: 1;
+        width: min(980px, 100%);
+        background: var(--surface);
+        border: 1px solid var(--stroke);
+        border-radius: 28px;
+        padding: 38px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .page::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          145deg,
+          rgba(211, 107, 61, 0.06),
+          rgba(68, 132, 163, 0.05)
+        );
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      .hero {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        gap: 8px;
+        margin-bottom: 22px;
+      }
+
+      .eyebrow {
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        font-size: 0.78rem;
+        color: var(--muted);
+        margin: 0;
+      }
+
+      h1 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: clamp(2rem, 4vw, 2.6rem);
+        margin: 0;
+      }
+
+      .lede {
+        color: var(--muted);
+        margin: 4px 0 0;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .policy {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        gap: 16px;
+      }
+
+      section {
+        padding: 18px 16px 14px;
+        border-bottom: 1px solid rgba(31, 39, 51, 0.08);
+      }
+
+      section:last-of-type {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      h2 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: 1.25rem;
+        margin: 0 0 10px;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.75;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 8px 0 0;
+      }
+
+      li {
+        position: relative;
+        padding-left: 18px;
+        margin-bottom: 8px;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      a {
+        color: var(--ink);
+        font-weight: 600;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(31, 39, 51, 0.16);
+        transition:
+          border-color 0.2s ease,
+          color 0.2s ease;
+      }
+
+      a:hover {
+        color: var(--accent);
+        border-color: var(--accent);
+      }
+
+      .note {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 12px;
+        border-radius: 12px;
+        background: rgba(211, 107, 61, 0.08);
+        color: var(--ink);
+        font-weight: 600;
+        margin-top: 6px;
+      }
+
+      .footer {
+        position: relative;
+        z-index: 1;
+        margin-top: 22px;
+        padding-top: 16px;
+        border-top: 1px solid rgba(31, 39, 51, 0.08);
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+
+      @media (max-width: 720px) {
+        body {
+          padding: 28px 16px 40px;
+        }
+
+        .page {
+          padding: 26px 22px;
+          border-radius: 22px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        section {
+          padding: 14px 6px 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <p class="eyebrow">Sudoku Pal</p>
+        <h1>Privacy Policy</h1>
+        <p class="lede">
+          This policy explains how the Sudoku Pal mobile app handles data.
+        </p>
+      </header>
+
+      <main class="policy" aria-label="Sudoku Pal Privacy Policy">
+        <section>
+          <h2>Scope</h2>
+          <p>
+            This policy applies to data stored on your device and processing
+            related to advertising services.
+          </p>
+        </section>
+
+        <section>
+          <h2>Data collected and processed</h2>
+          <ul>
+            <li>
+              The app does not require an account; we do not collect direct
+              personal information such as name or email address.
+            </li>
+            <li>
+              Game progress, settings, and similar data are stored locally on
+              your device.
+            </li>
+            <li>
+              If ads are enabled, third-party ad providers such as Google AdMob
+              may process device identifiers, IP address, and ad
+              impression/interaction data under their own privacy policies.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Use of data</h2>
+          <ul>
+            <li>
+              Local data is used to maintain gameplay and your preferences.
+            </li>
+            <li>
+              Ad data is processed for ad delivery and performance measurement.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Data sharing</h2>
+          <ul>
+            <li>
+              We do not sell or share personal data for marketing purposes.
+            </li>
+            <li>
+              Ad providers process data under their own policies:
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noreferrer"
+              >
+                policies.google.com/privacy
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Data deletion</h2>
+          <p>
+            You can delete local data and reset the app using the "Clear Data"
+            option in the app settings.
+          </p>
+          <span class="note" aria-label="Local data only">Local data only</span>
+        </section>
+
+        <section>
+          <h2>Changes</h2>
+          <p>
+            This policy may be updated from time to time. The current version is
+            published with the app.
+          </p>
+        </section>
+
+        <section>
+          <h2>Contact</h2>
+          <p>
+            For privacy questions, please use the developer contact details
+            available on the platform where the app is published.
+          </p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

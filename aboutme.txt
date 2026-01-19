@@ -1,5 +1,0 @@
-I am a Lead Business Analyst and Execution Lead with strong experience in insurtech and fintech, focused on translating complex business needs into clear analyses, well-structured workflows, and actionable solutions. By combining analytical thinking with a strong technology mindset, I work at the intersection of business strategy and digital execution.
-
-I enjoy solving problems, improving processes, and driving innovation through close collaboration. Alongside my core role, I bring hands-on experience with software development and automation, using technologies such as Python, FastAPI, React, and Selenium. This technical background allows me to work effectively with engineering teams, contribute to API-based systems, support automation initiatives, and help ensure that requirements are both realistic and implementable.
-
-By working closely with cross-functional teams, I aim to deliver high-quality, sustainable outcomes that create real value for teams and stakeholders.
