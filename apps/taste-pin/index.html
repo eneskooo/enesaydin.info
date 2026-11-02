@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F6F3ED">
+  <meta name="description" content="" data-i18n-content="meta.0">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:title" content="" data-i18n-content="meta.1">
+  <meta property="og:description" content="" data-i18n-content="meta.2">
+  <title data-i18n="copy.0"></title>
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+  <link rel="preload" href="assets/fonts/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/Poppins-Medium.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="translations.js" defer></script>
+  <script src="i18n.js" defer></script>
+  <script src="navigation.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#icerik"><span data-i18n="copy.1"></span></a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4Z"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2Zm6-2v16m6-14v16"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><path d="M12 15V2M7 7l5-5 5 5M5 11H3v10h18V11h-2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24"><path d="M3 7h3m5 0h10M3 17h10m5 0h3"/><circle cx="8.5" cy="7" r="2.5"/><circle cx="15.5" cy="17" r="2.5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="9" r="3"/><path d="M5.5 18c1-5 12-5 13 0"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="m10 13 4-4m-7 5-2 2a4 4 0 0 0 6 6l4-4a4 4 0 0 0 0-6m2-2 2-2a4 4 0 0 0-6-6L9 6a4 4 0 0 0 0 6" transform="translate(0 -1)"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="5" cy="5" r="2"/><circle cx="19" cy="19" r="2"/><path d="M7 5h9a4 4 0 0 1 0 8H8a3 3 0 0 0 0 6h9"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20 4c-3-2-6 0-8 2-2-2-5-4-8-2-6 5 1 11 8 17 7-6 14-12 8-17Z"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" data-i18n-label="label.0"><img src="assets/app-icon.png" alt="" width="40" height="40"><span><span data-i18n="copy.2"></span><span class="brand-dot">.</span></span></a>
+      <div class="language-picker">
+        <button id="language-trigger" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="language-menu"><span id="language-current"></span><svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+        <div id="language-menu" role="menu" data-i18n-label="language" hidden>
+          <button type="button" role="menuitemradio" aria-checked="false" data-language="tr" data-i18n="language.tr"></button>
+          <button type="button" role="menuitemradio" aria-checked="false" data-language="en" data-i18n="language.en"></button>
+        </div>
+      </div><button class="menu-toggle" type="button" data-i18n-label="label.1" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+      <nav class="main-nav" id="main-nav" data-i18n-label="label.3">
+        <a href="#nasil-calisir"><span data-i18n="copy.3"></span></a>
+        <a href="#kesfet"><span data-i18n="copy.4"></span></a>
+        <a href="faq.html"><span data-i18n="faq.nav"></span></a>
+        <a class="button button-small" href="#kesfet"><span data-i18n="copy.6"></span><svg class="icon"><use href="#i-arrow"/></svg></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="icerik">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="little-pin"><svg class="icon"><use href="#i-pin"/></svg></span><span data-i18n="copy.7"></span></div>
+        <h1 id="hero-title"><span data-i18n="copy.8"></span><br><span data-i18n="copy.9"></span><br><span><span data-i18n="copy.10"></span></span></h1>
+        <p class="hero-description"><span data-i18n="copy.11"></span><br class="desktop-break"><span data-i18n="copy.12"></span><br class="desktop-break"><span data-i18n="copy.13"></span></p>
+        <div class="hero-actions"><a class="button" href="#kesfet"><span data-i18n="copy.14"></span><svg class="icon"><use href="#i-arrow"/></svg></a><a class="text-link" href="#nasil-calisir"><span data-i18n="copy.3"></span><svg class="icon"><use href="#i-chevron"/></svg></a></div>
+        <div class="hero-notes"><span><svg class="icon"><use href="#i-check"/></svg><span data-i18n="copy.15"></span></span><span><svg class="icon"><use href="#i-check"/></svg><span data-i18n="copy.16"></span></span></div>
+      </div>
+
+      <div class="hero-scene" role="img" data-i18n-label="label.10">
+        <div class="scene-map"></div>
+        <div class="orbit-label"><svg class="icon"><use href="#i-pin"/></svg><span data-i18n="copy.17"></span></div>
+        <div class="scene-pin scene-pin-one">☕</div><div class="scene-pin scene-pin-two">🍕</div>
+        <div class="phone" aria-hidden="true">
+          <div class="phone-status"><span>9:41</span><span class="phone-island"></span><span class="status-bars">▮▮▮ <span class="battery"></span></span></div>
+          <div class="phone-content">
+            <div class="phone-title-row"><div><p class="phone-eyebrow"><span data-i18n="copy.18"></span></p><h2><span data-i18n="copy.19"></span></h2></div><span class="mini-avatar"><img src="assets/app-icon.png" alt="" width="36" height="36"></span></div>
+            <p class="phone-subtitle"><span data-i18n="copy.20"></span></p>
+            <div class="phone-toolbar"><span><svg class="icon"><use href="#i-search"/></svg></span><span><svg class="icon"><use href="#i-filter"/></svg></span><span class="phone-sort"><span data-i18n="copy.21"></span><svg class="icon"><use href="#i-chevron"/></svg></span><span class="phone-add"><svg class="icon"><use href="#i-plus"/></svg></span></div>
+            <div class="phone-venue"><span class="food-icon">☕</span><div><h3><span data-i18n="copy.22"></span></h3><p><span data-i18n="copy.23"></span></p><small><span data-i18n="copy.24"></span></small><span class="phone-source"><svg class="icon"><use href="#i-instagram"/></svg><span data-i18n="copy.25"></span></span></div></div>
+            <div class="phone-venue"><span class="food-icon">🍕</span><div><h3><span data-i18n="copy.26"></span></h3><p><span data-i18n="copy.27"></span></p><small><span data-i18n="copy.28"></span></small><span class="phone-source"><svg class="icon"><use href="#i-instagram"/></svg><span data-i18n="copy.29"></span></span></div></div>
+            <div class="phone-venue"><span class="food-icon">🍨</span><div><h3><span data-i18n="copy.30"></span></h3><p><span data-i18n="copy.31"></span></p><small><span data-i18n="copy.24"></span></small><span class="phone-source"><svg class="icon"><use href="#i-instagram"/></svg><span data-i18n="copy.29"></span></span></div></div>
+            <div class="phone-venue phone-venue-last"><span class="food-icon">🥗</span><div><h3><span data-i18n="copy.32"></span></h3><p><span data-i18n="copy.33"></span></p><small><span data-i18n="copy.34"></span></small></div></div>
+          </div>
+          <div class="phone-tabbar"><span class="selected"><svg class="icon"><use href="#i-bookmark"/></svg></span><span><svg class="icon"><use href="#i-map"/></svg></span><span><svg class="icon"><use href="#i-user"/></svg></span></div>
+          <div class="home-indicator"></div>
+        </div>
+        <div class="saved-note"><span class="saved-check"><svg class="icon"><use href="#i-check"/></svg></span><div><strong><span data-i18n="copy.35"></span></strong><span><span data-i18n="copy.36"></span></span></div><svg class="icon note-bookmark"><use href="#i-bookmark"/></svg></div>
+        <img class="hero-squirrel" src="assets/squirrel.png" alt="" width="280" height="246" fetchpriority="high">
+      </div>
+    </section>
+
+    <section class="journey container" id="nasil-calisir" aria-labelledby="journey-title">
+      <div class="journey-intro"><span class="section-kicker"><span data-i18n="copy.38"></span></span><h2 id="journey-title"><span data-i18n="copy.39"></span></h2><p><span data-i18n="copy.40"></span></p></div>
+      <ol class="steps">
+        <li><div class="step-top"><span class="step-icon"><svg class="icon"><use href="#i-share"/></svg></span><span class="step-number">01</span></div><h3><span data-i18n="copy.41"></span></h3><p><span data-i18n="copy.42"></span></p></li>
+        <li><div class="step-top"><span class="step-icon"><svg class="icon"><use href="#i-bookmark"/></svg></span><span class="step-number">02</span></div><h3><span data-i18n="copy.43"></span></h3><p><span data-i18n="copy.44"></span></p></li>
+        <li><div class="step-top"><span class="step-icon"><svg class="icon"><use href="#i-route"/></svg></span><span class="step-number">03</span></div><h3><span data-i18n="copy.45"></span></h3><p><span data-i18n="copy.46"></span></p></li>
+      </ol>
+    </section>
+
+    <section class="discovery-section" id="kesfet" aria-labelledby="discovery-title">
+      <div class="container discovery-layout discovery-text-only">
+        <div class="discovery-copy"><span class="section-kicker"><span data-i18n="copy.47"></span></span><h2 id="discovery-title"><span data-i18n="copy.48"></span><br><span data-i18n="copy.49"></span><br><span><span data-i18n="copy.50"></span></span></h2><p><span data-i18n="copy.51"></span></p>
+          <ul class="benefits"><li><svg class="icon"><use href="#i-bookmark"/></svg><div><h3><span data-i18n="copy.52"></span></h3><p><span data-i18n="copy.53"></span></p></div></li><li><svg class="icon"><use href="#i-filter"/></svg><div><h3><span data-i18n="copy.54"></span></h3><p><span data-i18n="copy.55"></span></p></div></li><li><svg class="icon"><use href="#i-map"/></svg><div><h3><span data-i18n="copy.56"></span></h3><p><span data-i18n="copy.57"></span></p></div></li></ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="share-section container" aria-labelledby="share-title">
+      <div class="share-visual" aria-hidden="true"><div class="share-caption"><svg class="icon"><use href="#i-instagram"/></svg><span><span data-i18n="copy.74"></span><br><span data-i18n="copy.75"></span></span></div><div class="share-connector"><span></span><svg class="icon"><use href="#i-arrow"/></svg></div><div class="share-preview"><div class="sheet-handle"></div><img src="assets/app-icon.png" alt="" width="60" height="60" loading="lazy"><strong><span data-i18n="copy.2"></span></strong><span><span data-i18n="copy.7"></span></span><div class="share-status"><svg class="icon"><use href="#i-check"/></svg><span data-i18n="copy.76"></span></div><p><span data-i18n="copy.77"></span></p></div><span class="share-preview-note"><span data-i18n="copy.78"></span></span></div>
+      <div class="share-copy"><span class="section-kicker"><span data-i18n="copy.79"></span></span><h2 id="share-title"><span data-i18n="copy.80"></span><br><span data-i18n="copy.81"></span><br><span><span data-i18n="copy.82"></span></span></h2><p><span data-i18n="copy.83"></span></p><p class="share-alternative"><svg class="icon"><use href="#i-link"/></svg><span data-i18n="copy.84"></span></p></div>
+    </section>
+
+    <section class="faq-section container" id="sorular" aria-labelledby="faq-title"><div class="faq-intro"><span class="section-kicker"><span data-i18n="copy.85"></span></span><h2 id="faq-title"><span data-i18n="copy.86"></span></h2><p><span data-i18n="copy.87"></span><br><span data-i18n="copy.88"></span></p><a class="text-link" href="faq.html" data-i18n="faq.all"></a></div><div class="faq-list">
+      <details><summary><span data-i18n="copy.89"></span><svg class="icon"><use href="#i-plus"/></svg></summary><p><span data-i18n="copy.90"></span></p></details>
+      <details><summary><span data-i18n="copy.91"></span><svg class="icon"><use href="#i-plus"/></svg></summary><p><span data-i18n="copy.92"></span></p></details>
+      <details><summary><span data-i18n="copy.93"></span><svg class="icon"><use href="#i-plus"/></svg></summary><p><span data-i18n="copy.94"></span></p></details>
+      <details><summary><span data-i18n="copy.95"></span><svg class="icon"><use href="#i-plus"/></svg></summary><p><span data-i18n="copy.96"></span></p></details>
+      <details><summary><span data-i18n="copy.97"></span><svg class="icon"><use href="#i-plus"/></svg></summary><p><span data-i18n="copy.98"></span></p></details>
+    </div></section>
+
+    <section class="closing container" aria-labelledby="closing-title"><div><span class="section-kicker"><span data-i18n="copy.99"></span></span><h2 id="closing-title"><span data-i18n="copy.100"></span><br><span data-i18n="copy.101"></span></h2><p><span data-i18n="copy.102"></span></p><a class="button button-light" href="#kesfet"><span data-i18n="copy.103"></span><svg class="icon"><use href="#i-arrow"/></svg></a></div><div class="closing-art" aria-hidden="true"><div class="closing-ring"></div><img src="assets/squirrel.png" alt="" width="320" height="281" loading="lazy"><span class="closing-sticker"><svg class="icon"><use href="#i-heart"/></svg><span data-i18n="copy.104"></span></span></div></section>
+  </main>
+  <footer class="site-footer container"><div class="footer-top"><a class="brand" href="#" data-i18n-label="label.0"><img src="assets/app-icon.png" alt="" width="34" height="34"><span><span data-i18n="copy.2"></span><span class="brand-dot">.</span></span></a><p><span data-i18n="copy.39"></span></p><a href="#nasil-calisir"><span data-i18n="copy.105"></span><svg class="icon"><use href="#i-arrow"/></svg></a></div><div class="footer-bottom"><span>© <span id="year">2026</span><span data-i18n="copy.2"></span></span><span><span data-i18n="copy.106"></span></span><a href="#"><span data-i18n="copy.107"></span></a></div></footer>
+</body>
+</html>
