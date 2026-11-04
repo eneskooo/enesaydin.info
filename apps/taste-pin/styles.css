@@ -268,7 +268,6 @@ svg{display:inline-block;flex-shrink:0}
 @media(max-width:680px) { #language-trigger { gap:10px; padding-inline:5px; font-size:12px; } #language-menu { min-width:140px; } }
 
 .faq-page { max-width:900px; padding-bottom:64px; }
-.faq-back { margin-top:28px; }
 .faq-page-intro { text-align:center; padding:52px 20px 60px; }
 .faq-page-intro h1 { font-size:clamp(32px,4.4vw,54px); letter-spacing:-1.8px; margin:20px auto; max-width:760px; }
 .faq-page-intro>p { color:var(--muted); font-size:15px; max-width:610px; margin:auto; }
