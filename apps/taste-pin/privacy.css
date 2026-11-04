@@ -4,10 +4,7 @@
 .privacy-intro h1 { font-size:clamp(36px,5vw,60px); letter-spacing:-2px; line-height:1.15; margin:20px 0; }
 .privacy-intro>p { max-width:670px; font-size:16px; color:var(--muted); }
 .privacy-intro .privacy-date { font-size:13px; margin-top:22px; }
-.privacy-summary { background:var(--primary-soft); border-radius:24px; padding:28px 32px; margin-bottom:52px; }
-.privacy-summary h2 { font-size:20px; }
-.privacy-summary ul { padding-left:22px; margin:15px 0 0; }
-.privacy-summary li { margin:8px 0; }
+
 .privacy-layout { display:grid; grid-template-columns:240px minmax(0,1fr); gap:64px; align-items:start; }
 .privacy-toc { position:sticky; top:110px; max-height:calc(100vh - 130px); overflow:auto; padding:5px 8px 5px 0; }
 .privacy-toc h2 { font-size:13px; color:var(--muted); margin-bottom:12px; }
@@ -33,6 +30,6 @@
 .privacy-provider-links li { margin:0; }
 .privacy-back-top { margin-top:12px; }
 @media(max-width:1000px){.privacy-layout{grid-template-columns:190px minmax(0,1fr);gap:32px}}
-@media(max-width:850px){.privacy-layout{display:block}.privacy-toc{position:static;max-height:none;margin-bottom:38px;padding:0}.privacy-toc ol{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}.privacy-intro{padding-top:42px}.privacy-summary{margin-bottom:32px}}
-@media(max-width:540px){.privacy-intro h1{letter-spacing:-1px}.privacy-intro>p{font-size:14px}.privacy-summary{padding:22px}.privacy-summary li{font-size:13px}.privacy-toc ol{display:block}.privacy-toc a{font-size:13px;min-height:44px}.privacy-article h2{font-size:22px}.privacy-table th,.privacy-table td{padding:12px 8px;overflow-wrap:anywhere}.privacy-table{font-size:12px}.privacy-table tbody th{width:29%}.privacy-notice{padding:20px}.privacy-article section{scroll-margin-top:90px}.privacy-page{padding-bottom:32px}}
-@media print{.privacy-toc,.privacy-back-top,.faq-back,.language-picker,.main-nav{display:none}.privacy-layout{display:block}.privacy-intro{padding-top:20px}.privacy-article section{break-inside:auto}.privacy-article h2,.privacy-article h3{break-after:avoid}.privacy-notice{break-inside:avoid}.privacy-table tr{break-inside:avoid}.privacy-summary{margin-bottom:24px}}
+@media(max-width:850px){.privacy-layout{display:block}.privacy-toc{position:static;max-height:none;margin-bottom:38px;padding:0}.privacy-toc ol{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}.privacy-intro{padding-top:42px}}
+@media(max-width:540px){.privacy-intro h1{letter-spacing:-1px}.privacy-intro>p{font-size:14px}.privacy-toc ol{display:block}.privacy-toc a{font-size:13px;min-height:44px}.privacy-article h2{font-size:22px}.privacy-table th,.privacy-table td{padding:12px 8px;overflow-wrap:anywhere}.privacy-table{font-size:12px}.privacy-table tbody th{width:29%}.privacy-notice{padding:20px}.privacy-article section{scroll-margin-top:90px}.privacy-page{padding-bottom:32px}}
+@media print{.privacy-toc,.privacy-back-top,.faq-back,.language-picker,.main-nav{display:none}.privacy-layout{display:block}.privacy-intro{padding-top:20px}.privacy-article section{break-inside:auto}.privacy-article h2,.privacy-article h3{break-after:avoid}.privacy-notice{break-inside:avoid}.privacy-table tr{break-inside:avoid}}
