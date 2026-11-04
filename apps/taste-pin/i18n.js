@@ -2,6 +2,8 @@
 (() => {
   let preference = 'tr';
   try { preference = localStorage.getItem('taste-pin.locale') || 'tr'; } catch {}
+  const requestedLocale = new URLSearchParams(window.location.search).get('lang');
+  if (['tr', 'en'].includes(requestedLocale)) preference = requestedLocale;
   if (!['tr', 'en'].includes(preference)) preference = 'tr';
   let locale = preference;
   const t = (key, values = {}) => (window.webMessages[locale][key] || window.webMessages.en[key] || key).replace(/\{([^}]+)\}/g, (match, name) => values[name] ?? match);
