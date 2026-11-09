@@ -45,6 +45,7 @@
     document.documentElement.dir = 'ltr';
     document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
     document.querySelectorAll('[data-i18n-label]').forEach(el => el.setAttribute('aria-label', t(el.dataset.i18nLabel)));
+    document.querySelectorAll('[data-i18n-src]').forEach(el => el.setAttribute('src', t(el.dataset.i18nSrc)));
     document.querySelectorAll('[data-i18n-alt]').forEach(el => el.setAttribute('alt', t(el.dataset.i18nAlt)));
     document.querySelectorAll('[data-i18n-content]').forEach(el => el.setAttribute('content', t(el.dataset.i18nContent)));
     document.querySelector('[property="og:locale"]').content = locale === 'tr' ? 'tr_TR' : 'en_US';

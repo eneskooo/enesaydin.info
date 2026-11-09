@@ -53,7 +53,11 @@ svg{display:inline-block;flex-shrink:0}
 .hero h1>span{color:var(--primary);position:relative}
 .hero h1>span::after{content:'';position:absolute;left:0;right:2px;bottom:-8px;height:10px;border-top:2px solid #a8bd9f;border-radius:50%;transform:rotate(-1.2deg)}
 .hero-description{margin-top:29px;color:var(--muted);font-size:14px;line-height:1.9}
-.hero-actions{display:flex;align-items:center;gap:28px;margin-top:31px}
+.store-badge{display:inline-flex;vertical-align:middle;border-radius:7px}
+.store-badge img{display:block;height:44px;width:auto}
+.closing .store-badge{margin-top:26px}
+.closing .store-badge:focus-visible{outline-color:white}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:28px;margin-top:31px}
 .hero-notes{display:flex;gap:22px;margin-top:23px;font-size:10px;color:var(--muted)}
 .hero-notes span{display:flex;align-items:center;gap:6px}
 .hero-notes .icon{width:14px;height:14px;color:var(--primary)}

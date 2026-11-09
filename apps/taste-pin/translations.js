@@ -1,5 +1,7 @@
 window.webMessages = {
   "tr": {
+    "store.badge": "assets/app-store-tr.svg",
+    "store.download": "Taste Pin’i App Store’dan indirin",
     "terms.nav": "Kullanım koşulları",
     "terms.heading": "Kullanım koşulları",
     "terms.title": "Taste Pin — Kullanım Koşulları",
@@ -239,6 +241,8 @@ window.webMessages = {
     "privacy.back": "Sayfanın başına dön"
   },
   "en": {
+    "store.badge": "assets/app-store-en.svg",
+    "store.download": "Download Taste Pin on the App Store",
     "terms.nav": "Terms of Use",
     "terms.heading": "Terms of Use",
     "terms.title": "Taste Pin — Terms of Use",
