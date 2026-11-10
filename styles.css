@@ -121,36 +121,6 @@ h1 {
   color: var(--ink);
 }
 
-.featured-app {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 14px;
-  padding-top: 20px;
-  border-top: 1px solid var(--stroke);
-}
-
-.featured-app img {
-  display: block;
-}
-
-.featured-app-name {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--ink);
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.featured-app-name img {
-  border-radius: 10px;
-}
-
-.featured-app-name:hover {
-  text-decoration: underline;
-}
-
 .content {
   background: var(--surface);
   border: 1px solid var(--stroke);
